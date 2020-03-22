@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EX1-Web_Development</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/emoji.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner"></div>
+      <header>
+        <a href="#" class="logo">Amit Nachimovitz</a>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#photos">My Photos</a></li>
+          <li><a href="#playlist">My Playlist</a></li>
+          <li><a href="#like">Like</a></li>
+          <li><a href="#qrcoder">QR code</a></li>
+          <li><a href="#spa">Q&A</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <section id="about" class="text">
+          <h2>About Me</h2>
+          <p>
+            A free, fully responsive HTML5 + CSS3 site template designed by
+            @ajlkn for HTML5 UP and released for free under the Creative Commons
+            license.
+          </p>
+        </section>
+        <section id="photos">
+          <h2>Photos</h2>
+          <br />
+          <div class="gallery">
+            <img src="assets/images/1.jpg" />
+            <img src="assets/images/2.jpg" />
+            <img src="assets/images/3.jpg" />
+            <img src="assets/images/4.jpg" />
+            <img src="assets/images/5.jpg" />
+            <img src="assets/images/6.jpg" />
+            <img src="assets/images/7.jpg" />
+            <img src="assets/images/8.jpg" />
+            <img src="assets/images/9.jpg" />
+          </div>
+        </section>
+        <section id="playlist">
+          <h2>My Playlist</h2>
+          <br />
+          <div class="playlist">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_kdVSznJpFY3DP4YcTm4TPdwRfNCOE9TRw&index=7"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <section id="like">
+          <br />
+          <h2>Like</h2>
+        </section>
+        <section id="qrcoder" class="content">
+          <br />
+          <h2>Scan My Code</h2>
+        </section>
+        <section id="spa" class="content">
+          <h2>Q&A</h2>
+          <br />
+        </section>
+        <section id="contact" class="content">
+          <br />
+          <h2>Contact Me</h2>
+          <div class="contact">
+            <form
+              method="GET"
+              action="mailto:nachimoa@post.bgu.ac.il"
+              enctype="text/plain"
+            >
+              <div>Subject:</div>
+              <p>
+                <input type="text" name="subject" />
+              </p>
+              <div>Message:</div>
+              <p class="lead emoji-picker-container">
+                <textarea
+                  class="form-control textarea-control"
+                  name="body"
+                  rows="3"
+                  data-emojiable="true"
+                ></textarea>
+              </p>
+
+              <br />
+              <input type="submit" value="Send" />
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#nav a').click(function(e) {
+          e.preventDefault();
+          $('html,body').scrollTo(this.hash, this.hash);
+        });
+      });
+    </script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/jquery.emojiarea.js"></script>
+    <script src="assets/js/emoji-picker.js"></script>
+    <script>
+      $(function() {
+        window.emojiPicker = new EmojiPicker({
+          emojiable_selector: '[data-emojiable=true]',
+          assetsPath: 'assets/img/',
+          popupButtonClasses: 'fa fa-smile-o'
+        });
+        window.emojiPicker.discover();
+      });
+    </script>
+  </body>
+</html>
