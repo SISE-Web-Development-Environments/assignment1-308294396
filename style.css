@@ -75,6 +75,14 @@ ul li:hover {
   margin-top: -0.25rem;
   font-size: 24px;
 }
+.ans {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-top: -0.25rem;
+  font-size: 24px;
+  text-align: left;
+}
 .content h2 {
   padding: 0;
   font-size: 48px;
@@ -87,6 +95,14 @@ ul li:hover {
   text-align: center;
   color: #212931;
 }
+.content h4 {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.25rem;
+  font-style: bold;
+  margin-top: -0.25rem;
+  font-size: 24px;
+}
+
 .gallery {
   margin: 50px;
 }
@@ -100,9 +116,6 @@ ul li:hover {
 .playlist {
   margin: 50px;
 }
-.contact {
-}
-
 .contact form {
   font-family: 'Merriweather', Georgia, serif;
   font-size: 1.25rem;
