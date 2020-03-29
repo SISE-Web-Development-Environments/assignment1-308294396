@@ -63,6 +63,12 @@ ul li:hover {
 }
 .content {
   width: 100%;
+  font-size: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.section {
+  width: 100%;
   padding: 100px;
   font-size: 20px;
   box-sizing: border-box;
